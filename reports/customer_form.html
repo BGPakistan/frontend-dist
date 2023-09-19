@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      @font-face {
+        font-family: NafeesWeb;
+        src: url("fonts/NafeesWeb.ttf");
+      }
+
+      @font-face {
+        font-family: Jameel;
+        src: url("fonts/Jameel.ttf");
+      }
+
+      .arabic {
+        font-family: Jameel;
+      }
+
+      .header {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        line-height: 1em;
+      }
+
+      .customer-detail {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .customer-detail table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .customer-detail table caption {
+        border: 1px Solid #d8d8d8;
+        padding: 7px 0;
+        font-weight: bold;
+      }
+
+      .customer-detail table td {
+        border: 1px Solid #d8d8d8;
+        padding: 5px;
+      }
+
+      .tender-content {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+        text-align: center;
+      }
+
+      .tender-content h2 {
+        margin-bottom: 5px;
+      }
+
+      .tender-content table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .tender-content table caption {
+        border: 1px Solid #d8d8d8;
+        padding: 7px 0;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .tender-content table td, .tender-content table th {
+        border: 1px Solid #d8d8d8;
+        padding: 5px;
+        font-size: 1.4em;
+      }
+
+      .tender-terms {
+        text-align:right;
+        line-height: 0.7em;
+      }
+
+      .dotted-line {
+        border-style: dashed;
+        margin: 20px 0;
+      }
+
+      .tender-receipt {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .tender-receipt table {
+        width: 100%;
+        border: 1px Solid #d8d8d8;
+      }
+
+      .tender-receipt table td {
+        border: 1px Solid #d8d8d8;
+        padding: 5px;
+      }
+
+      .sign {
+        margin-top: 7em;
+        float:right;
+        border-top: 1px Solid #000;
+        padding: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="arabic">برھانی ایمبولینس کورپس</h3>
+      <h1 class="arabic">ٹینڈر فارم</h3>
+    </div>
+    <div class="customer-detail">
+      <table>
+        <caption>
+          Customer Details
+        </caption>
+        <tbody>
+          <tr>
+            <td width="30%">Form No:</td>
+            <td>#FORMNO</td>
+          </tr>
+          <tr>
+            <td>Company Name:</td>
+            <td>#COMPANYNAME</td>
+          </tr>
+          <tr>
+            <td>Contact Person:</td>
+            <td>#CONTACTPERSON</td>
+          </tr>
+          <tr>
+            <td>Contact No:</td>
+            <td>#CONTACTNO</td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>#ADDRESS</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tender-content">
+      <h2 class="arabic">کوائف ٹینڈر مندرجاہ ذیل کھالوں کے لیے</h2>
+      <table>
+        <thead>
+            <tr class="arabic">
+                <th rowspan="2" width="30%">
+                    باسی کھال دوسرے دن کی %25 میں خریدنا لازمی ھوگی
+                </th>
+                <th width="17.5%">اونٹ</th>
+                <th width="17.5%">گاے</th>
+                <th width="17.5%">دنباہ</th>
+                <th width="17.5%">بکرا</th>
+            </tr>            
+            <tr style="height: 3em;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+      </table>
+      <div class="tender-terms arabic">
+        <h2>:شرائط</h2>
+        <h3 style="direction: rtl;">تمام ٹینڈر دینے والے حضرات کو لازم ہوگا کہ #DEPOSIT ایڈوانس (جو کہ قابل واپسی ھے) کے ساتھ جمع کرانا ھوگا۔</h3>
+        <h3>ٹینڈر کسی بھی وجہ سے مسترد کئے جا سکتے ہیں۔</h3>
+        <h3>ٹینڈر دئے گئے وقت کہ مطابق ٹینڈر دھندگان کے سامنے کھولے جا ئینگے۔</h3>
+        <h3>شکریہ</h3>
+      </div>
+    </div>
+    <div class="tender-receipt">
+      <hr class="dotted-line" />
+
+      <table>
+        <tr>
+          <td><b>#FORMNO</b></td>
+        </tr>
+        <tr>
+          <td>Received with thanks from: <b>#COMPANYNAME</b></td>
+        </tr>
+        <tr>
+          <td>The sum of <b>#DEPOSIT</b> - On account of Tender Advance</td>
+        </tr>
+      </table>
+
+      <hr class="dotted-line" />
+
+      <table>
+        <tr>
+          <td><b>#FORMNO</b></td>
+        </tr>
+        <tr>
+          <td>Received with thanks from: <b>#COMPANYNAME</b></td>
+        </tr>
+        <tr>
+          <td>The sum of <b>#DEPOSIT</b> - On account of Tender Advance</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sign">
+      Receiver's Signature
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    window.onload = (event) => {
+      window.print();
+    };
+  </script>
+</html>
